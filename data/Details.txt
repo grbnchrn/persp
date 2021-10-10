@@ -1,0 +1,31 @@
+gcloud sql connect persp-mysql-instance --user=root 
+
+
+CREATE TABLE employees (
+  Emp_Id INT,
+  First_Name VARCHAR(50),
+  Last_Name VARCHAR(50),
+  Email VARCHAR(50),
+  Phone_Number VARCHAR(20),
+  Gender VARCHAR(5),
+  Country VARCHAR(20),
+  City VARCHAR(20),
+  State VARCHAR(20),
+  Region VARCHAR(50),
+  Zip VARCHAR(10),
+  Date_of_Joining VARCHAR(20),
+  Date_of_Birth VARCHAR(20),
+  Age FLOAT,
+  Weight FLOAT,
+  Experience FLOAT,
+  Salary DOUBLE
+);
+
+
+INSERT INTO employees 
+(Emp_Id, First_Name, Last_Name, Email, Phone_Number, Gender, Country, City, State, Region, Zip, Date_of_Joining,
+  Date_of_Birth,  Age, Weight, Experience, Salary)
+   VALUES
+   (21, "GRBN", "CHRN", "grbn@cc.com", "123456789", "M", "India", "Trivandrum", "KE", "South", "685505", "03-10-2020", 
+   "03-10-2000", 20, 50.25, 1.5, 123456.563);
+
